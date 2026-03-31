@@ -1,0 +1,76 @@
+body
+{
+    background-color: black;
+}
+
+.RedBox
+{
+    background-color: rgb(130, 5, 5);
+
+    display: flex;
+
+    height: 8%;
+    width: 100%;
+    
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    box-shadow: 5px, 5px, 15px rgba(0, 0, 0, 0.5);
+}
+
+a
+{
+    text-decoration: none;
+    font-size: 1vw;
+    color: black;
+}
+
+.links
+{
+    padding: 10px;
+    margin: auto; 
+    border-radius: 50%;
+
+    font-size: 150%;
+    font-weight: bold;
+    
+    cursor: pointer;
+
+    user-select: none;
+}
+
+#CinemaImg
+{
+    position: fixed;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 70%;
+    height: 70%;
+}
+#CartIcon
+{
+    position: fixed;
+    top: 1%;
+    left: 95%;
+    transform: translate(-50%);
+    width: 4%;
+    height: 7%;
+}
+
+#movieContainer img 
+{
+    margin-left: 2%;
+    margin-top: 5%;
+    border-radius: 8px;
+    width: 150px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#movieContainer img:hover 
+{
+    transform: scale(1.1);
+}
