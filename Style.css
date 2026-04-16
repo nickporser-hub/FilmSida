@@ -50,13 +50,14 @@ a
     width: 70%;
     height: 70%;
 }
+
 #CartIcon
 {
     position: fixed;
-    top: 1%;
+    top: 0%;
     left: 95%;
     transform: translate(-50%);
-    width: 4%;
+    width: 3%;
     height: 7%;
 }
 
@@ -74,3 +75,28 @@ a
 {
     transform: scale(1.1);
 }
+
+h1
+{
+    color: white;
+    position: fixed; 
+    /* text-align: center;  */
+    top: 4.5%;
+    left: 50%;
+    
+    transform: translate(-50%); 
+}
+
+#movieDetails
+{
+    color: white;
+    margin-top: 100px;
+    text-align: center;
+}
+
+#movieDetails img
+{
+    border-radius: 10px;
+    margin: 20px;
+}
+
