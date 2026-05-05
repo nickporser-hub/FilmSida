@@ -100,3 +100,112 @@ h1
     margin: 20px;
 }
 
+#cartContainer div
+{
+    color: white; 
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.cart-item 
+{
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.cart-item img 
+{
+    width: 100px;
+    border-radius: 5px;
+}
+
+.remove-btn 
+{
+    margin-top: 10px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #e63946;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.remove-btn:hover 
+{
+    background-color: #c1121f;
+}
+
+.clear-btn 
+{
+    display: block;
+    margin: 30px auto 0 auto; 
+    margin-top: 5%;
+    padding: 8px 12px;
+    border: none;
+    background-color: #e63946;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.clear-btn:hover 
+{
+    background-color: #c1121f;
+}
+
+#bookingSection
+{
+    background-color: #111;
+    color: white;
+
+    width: 300px;
+    margin: 40px auto;
+    padding: 20px;
+
+    border-radius: 12px;
+    text-align: center;
+
+    box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+}
+
+#bookingSection h2
+{
+    margin-bottom: 15px;
+}
+
+#timeSelect
+{
+    width: 80%;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+#bookBtn
+{
+    background-color: rgb(130, 5, 5);
+    color: white;
+
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#bookBtn:hover
+{
+    background-color: rgb(180, 20, 20);
+    transform: scale(1.05);
+}

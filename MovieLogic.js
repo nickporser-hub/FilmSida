@@ -20,3 +20,30 @@ if(movie)
     container.appendChild(desc);
     container.appendChild(rating);
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    const bookBtn = document.getElementById("bookBtn");
+    const timeSelect = document.getElementById("timeSelect");
+    const amountSelect = document.getElementById("amount");
+
+    bookBtn.addEventListener("click", () =>
+    {
+        if (!movie) return;
+
+        const selectedTime = timeSelect.value;
+        const selectedAmount = amountSelect.value;
+
+        let bookings = JSON.parse(localStorage.getItem("bookings")) || [];
+
+        bookings.push({
+            title: movie.title,
+            time: selectedTime,
+            poster: movie.poster_path,
+            amount: selectedAmount
+        });
+
+        localStorage.setItem("bookings", JSON.stringify(bookings));
+
+        alert("Bokning sparad!");
+    });
+});
