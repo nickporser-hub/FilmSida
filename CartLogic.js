@@ -31,8 +31,11 @@ else
         const time = document.createElement("p");
         time.textContent = "Tid: " + booking.time;
 
-        //const amount = document.createElement("p");
-        //amount.textContent = "antal: " + booking.amount;
+        const amount = document.createElement("p");
+        amount.textContent = "Antal: " + booking.amount;
+
+        const day = document.createElement("p");
+        day.textContent = "Dag: " + booking.day;
 
         const img = document.createElement("img");
         img.src = `https://image.tmdb.org/t/p/w200${booking.poster}`;
@@ -51,6 +54,8 @@ else
 
         div.appendChild(title);
         div.appendChild(img);
+        div.appendChild(day);
+        div.appendChild(amount);
         div.appendChild(time);
         div.appendChild(removeBtn);
 

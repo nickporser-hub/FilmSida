@@ -24,6 +24,7 @@ if(movie)
 document.addEventListener("DOMContentLoaded", () => {
     const bookBtn = document.getElementById("bookBtn");
     const timeSelect = document.getElementById("timeSelect");
+    const daySelect = document.getElementById("daySelect");
     const amountSelect = document.getElementById("amount");
 
     bookBtn.addEventListener("click", () =>
@@ -31,6 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!movie) return;
 
         const selectedTime = timeSelect.value;
+        const selectedDay = daySelect.value;
         const selectedAmount = amountSelect.value;
 
         let bookings = JSON.parse(localStorage.getItem("bookings")) || [];
@@ -38,6 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
         bookings.push({
             title: movie.title,
             time: selectedTime,
+            day: selectedDay,
             poster: movie.poster_path,
             amount: selectedAmount
         });
