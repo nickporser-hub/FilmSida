@@ -1,7 +1,6 @@
 const container = document.getElementById("cartContainer");
 
 const bookings = JSON.parse(localStorage.getItem("bookings")) || [];
-console.log(bookings);
 
 if (bookings.length === 0)
 {

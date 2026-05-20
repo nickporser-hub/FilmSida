@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "Css/Style.css">
 
-    <title>Filmer</title>
+    <title>Kontakter</title>
     
     <!-- <link rel="icon" type ="image/png" href="Skarmbild 2025-02-10 103627.png"> -->
 </head>
@@ -16,11 +16,17 @@
         <a href="Contacts.html"><div class="links">Kontakter</div></a>
     </nav>
 
-    <a href="Cart.html"><img src = "Assets/ticketicon.png" id = "CartIcon" alt = "shoppingcart"></a>
-    
-    <section id = "movieContainer"></section>
+    <div class="loginBox">
+        <h2>Logga in</h2>
 
-    <script src = "ApiLogic.js"></script>
+        <input type="text" id="email" placeholder="Skriv din gmail">
+
+        <button onclick="login()">Logga in</button>
+
+        <p id="message"></p>
+    </div>
+
+    <script src = "Contacts.js"></script>
 
 </body>
 </html>

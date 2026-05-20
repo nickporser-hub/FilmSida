@@ -1,7 +1,7 @@
 const movie = JSON.parse(localStorage.getItem("selectedMovie"));
 const container = document.getElementById("movieDetails");
 
-if(movie)
+if (movie)
 {
     const title = document.createElement("h1");
     title.textContent = movie.title;
